@@ -1,0 +1,443 @@
+* {
+    margin: 0;
+    padding: 0;
+}  
+
+body {
+    background-image: url(background1.jpg);
+    background-size: cover;    
+}
+:root {
+    --color: lime;
+    --medium-front-size: 16px;
+    --big-front-size: 22px;
+    --font-weight: bold;
+    --font-family: Arial;
+    --margin-right: 30px;
+    --transition: 0.5s ease-in-out;
+}
+.general-container {
+    margin: 0 auto;
+    width: 1200px;
+    max-width: 100%;
+    min-height: 400px;   
+}
+.container-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    height: 70px;
+    width: 95%;
+    background: transparent;
+    position: fixed;
+    top: 0px;
+}
+header {
+    margin-bottom: 70px;
+}
+.main {
+    margin-bottom: 40px;
+}
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+img  {
+    height: 60px;
+    width: 60px;
+    float: left;    
+    margin-top: 5px;
+    margin-right: var(--margin-right);
+    margin-left: 40px;    
+}
+.navbar ul {
+    display: flex;
+    float: left;
+    justify-content: center;
+    align-items: center;
+}
+.navbar ul li {
+    list-style: none;
+    margin-right: var(--margin-right);
+    margin-top: 30px;
+    
+}
+.navbar ul li a {
+    color:white;
+    text-decoration: none;
+    transition: var(--transition);
+    font-size:  var(--big-front-size);
+    font-family: Arial;
+    font-weight: bold;
+}
+.navbar ul li a:hover {
+    color:var(--color);
+    font-size: 25px;
+}
+.navbar ul li :active {
+    color: var(--color);
+}
+.navbar a.active {
+    color: var(--color); 
+}
+.sch {
+    border: 2px solid white ;
+    margin-top: 23px;
+    height: 32px;
+    width: 250px;
+    background: transparent;
+    font-size: var(--medium-front-size);
+    font-weight: bold;
+    color: white;
+    margin-right: -15px;
+    border-right: none;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+}
+.bn {
+    width: 80px;
+    height: 40px;
+    margin-top: 10px;
+    margin-left: 0px;
+    border: 2px solid lime;
+    color: white;
+    font-size: var(--medium-front-size);
+    font-weight: bold;
+    border-left: none;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+    background: var(--color);
+    cursor: pointer;
+}
+.pic {
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    width: 30%;
+}
+.pic img {
+    height: 300px;
+    width: 80%;
+    border-radius: 50%;
+}
+.about-text {
+    float: right;
+    height: 100px;   
+    width: 70%;
+    margin-top: -300px;    
+    color: white;
+}
+h1, h2 {
+    font-size: var(--big-front-size);
+    font-family: var(--font-family);
+    font-weight: var(--font-weight);
+    text-align: center;
+    color: blue;
+}
+p, ul li, ol li {
+    font-size: var(--medium-front-size);
+    font-family: var(--font-family);
+    font-weight: var(--font-weight);
+    color: white;
+}
+h1 {
+    color: var(--color);
+}
+.list, .list1 {
+    float: left;
+    width: 35%;
+    height: 200px;   
+    margin-top: -190px;
+}
+.list {
+    margin-left: 350px;
+}
+.list ol {
+    padding-left: 70px;
+}
+.list2, .list3 {
+    float: left;
+    width: 33%;
+    height: 200px;   
+    margin-top: -10px;
+}
+.list3 ul {
+    padding-left: 100px;
+}
+
+.container {
+    display: flex;
+    width: 40%;
+    height: 480px;
+    align-items: center;
+    justify-content: center;
+    border: 5px solid white;
+    margin: 10px;
+    margin-left: 400px;
+    border-radius: 15px;
+    margin-bottom: 40px;
+
+}
+.action {
+    width: 90%;
+    max-width: 500px;
+}
+h4 {
+    font-size: 20px;
+    font-weight: bold;
+    font-family: Arial;
+    text-align: center;
+    color: black;
+}
+#text {
+    padding-top: -30px;
+}
+.page {
+    padding-top: 60px;
+    padding-bottom: -20px;
+}
+.input-field, select {
+    margin-bottom: 30px;
+    position: relative;
+}
+input, textarea, select {
+    width: 95%;
+    height: 35px;
+    border: 1px solid white;
+    background: transparent;
+    font-size: 20px;
+    color: black;
+    font-weight: bold;
+}
+textarea {
+    height: 100px;
+}
+label {
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding: 10px;
+    font-size: 20px;
+    font-family: Arial;
+    font-weight: bold;
+    cursor: text;
+    transition: 0.2s ease-in-out;
+    color: black;
+}
+button {
+    outline: none;
+    background: lime;
+    border: 2px solid lime;
+    cursor: pointer;
+    margin-left: 130px;
+    padding: 10px;
+    color: white;
+    width: 200px;
+    font-size: 20px;
+    font-family: Arial;
+    font-weight: bold;
+    border-radius: 15px;
+    margin-top: -15px;
+}
+option {
+    background: lime;
+    color: black;
+    font-family: Arial;
+    font-weight: bold;
+}
+input:focus~label, input:valid~label {
+top: -30px;
+font-size: 20px;
+}
+
+#h1 {
+    font-size: 30px;
+    font-weight: bold;
+    color: lime;
+    text-align: center;
+    padding-top: 50px;
+}
+.container1 {
+    width: 50%;
+    height: 490px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 5px solid white;
+    margin: 10px;
+    margin-left: 300px;
+    border-radius: 15px;
+    box-sizing: border-box;
+    margin-bottom: 40px;
+}
+.row {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: nowrap;
+}
+select {
+    width: 34%;
+    margin-right: 10px;
+}
+#b, #c {
+    font-size: 30px;
+    font-weight: bold;
+    font-family: Arial;
+    text-align: center;
+    color: black;
+}
+#c {
+    font-size: 15px;
+}
+.container2 {
+    width: 30%;
+    height: 480px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 5px solid white;
+    margin: 10px;
+    margin-left: 450px;
+    border-radius: 15px;
+    
+}
+.btn, .btn1 {
+    text-align: center;
+    border: 2px solid lime;
+    border-radius: 25px;
+    background-color: lime;
+    color: white;
+    align-items: center;
+    height: 40px;
+    width: 200px;
+    cursor: pointer;
+
+}
+.bt, .bt1 {
+    text-align: center;
+}
+.fp {
+    text-align: right;
+    color: purple;
+    margin-top: -10px;
+    cursor: pointer;
+}
+.btn1 {
+    background-color: blue;
+    border: 2px solid blue;
+    height: 50px;
+    font-size: 18px;
+}
+.btn, .btn1 {
+    margin-top: 30px;
+    margin-left: -20px;
+}
+.btn:hover, .btn1:hover {
+    background: yellow;
+}
+.h {
+    font-size: 30px;
+    font-weight: bold;
+    font-family: Arial;
+    text-align: center;
+    color: black;
+    margin-top: -40px;
+}
+.input {
+    margin-bottom: 30px;
+    margin-top: 5px;
+}
+.navbar ul li a {
+   float: left;
+   display: block;
+}
+@media (min-width:920px) and (max-width:1240px) {
+    ul li {
+        margin-right: 10px;
+    }
+    ul li a {
+        font-size: 17px;
+    }
+    .sch {
+        width: 150px;
+    }
+    .bn {
+        width: 70px;
+        font-size: 16px;
+    }
+}
+@media (min-width:650px) and (max-width:920px) {
+    .container-nav {
+        text-align: center;
+        flex-direction: column;
+    }
+    ul {
+        flex-direction: column;
+    }
+    .navbar ul li {
+        margin: 1px;
+        border: 2px solid black;
+        background: black;
+        border-radius: 15px;
+        color: white;
+        
+    }
+    .navbar ul li a {
+        font-size: 16px;
+    }
+   .pic {
+       display: flex;
+       justify-content: left;
+       align-items: left;
+       margin-top: -5px;
+   }
+   .about-text {
+       width: 50%;
+       padding-top: 500px;
+       text-align: left;
+   }
+   h1,h2,h3  {
+    text-align: center;
+   }
+   .list, .list1 {
+       margin-left: 0px;
+   }
+   .contact {
+       margin-top: 1050px;
+       text-align: left;
+    }
+   
+   .container {
+       margin-top: 90px;
+       margin-left: 10px;
+       width: 40%;
+       font-size: 15px;
+   }
+    .container1 {
+       margin-left: 10px;
+       width: 40%;
+   }
+   .container2 {
+    margin-left: 10px;
+    width: 40%;
+   }
+    
+   label {
+       font-size: 15px;
+   }
+   #h1 {
+       text-align: left;
+       padding-left: 10px;
+   }
+   button {
+       width: 100px;
+       margin-left: 70px;
+   }
+   #b {
+       font-size: 22px;
+   }
+}
+      
